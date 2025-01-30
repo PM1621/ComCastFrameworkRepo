@@ -53,6 +53,13 @@ public class HomePage extends BaseClass{
 		return Signout;
 	}
 	
+	@FindBy(linkText="Products")
+	private WebElement Productlink;
+	
+	public WebElement getProductlink() {
+		return Productlink;
+	}
+
 	public void logout()
 	{
 		Actions action= new  Actions(driver);
